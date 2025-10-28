@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block body %}
+        <!-- Page Content-->
+         <div>
+                <h1 class="mb-0" style = "margin-left: 1%;">
+                        Contact
+                        <span class="text-primary">Me</span>
+                </h1>
+                <div style = "margin-left: 0%" class = "social-icons">
+                        <ul style = "list-style-type: none;">
+                                <li>
+                                        <a href = "#H"><i class="fa-solid fa-envelope"></i>  SJEGoh82@gmail.com</a>
+                                </li>
+                                <li>
+                                        <a><i class="fa-brands fa-telegram"></i>  @SamuelGoh2004</a>
+                                </li>
+
+                        </ul>
+                </div>
+         </div>
+         <div style = "display:flex; margin-left:25%; margin-top: 10%; padding: 10px;">
+                <form>
+                        <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                                <label for="purpose_of_contact">Purpose</label>
+                                <input type="text" class="form-control" id="purpose">
+                        </div>
+                        <div class="form-group">
+                                <label for="user_message">Message</label>
+                                <textarea class="form-control" id="user_message" rows="3"></textarea>
+                        </div>
+                        <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="contact_back_approval">
+                                <label class="form-check-label" for="exampleCheck1">Can I contact you back?</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+         </div>
+{% endblock %}
