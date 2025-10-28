@@ -16,4 +16,6 @@ def contact():
         print(name, email, purpose, message)
     return render_template('contact.html')
 
-
+@app.route('/education')
+def education():
+    return render_template('education.html')
