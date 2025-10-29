@@ -1,6 +1,4 @@
 from flask import Flask, render_template, request
-import os
-os.environ["no_proxy"] = "*"
 
 app = Flask(__name__)
 
@@ -21,3 +19,21 @@ def contact():
 @app.route('/education')
 def education():
     return render_template('education.html')
+
+
+@app.route('/projects', methods = ['GET', 'POST'])
+def projects():
+    return render_template('projects.html')
+
+@app.route('/experience')
+def experience():
+    return render_template('experience.html')
+
+@app.route('/interests')
+def interests():
+    return render_template('interests.html')
+
+@app.route('/skills')
+def skills():
+    return render_template('skills.html')
+
