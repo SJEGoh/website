@@ -5359,6 +5359,7 @@ textarea.form-control-lg {
 
 .modal-title {
   margin-bottom: 0;
+  font-size: 3rem;
   line-height: var(--bs-modal-title-line-height);
 }
 
@@ -10985,7 +10986,9 @@ section.resume-section .resume-section-content {
   padding-bottom: 1rem;
 }
 
-.grid-pic {
+.proj-grid .grid-pic {
+  transition: opacity 0.2s ease;
+  cursor: pointer;
   object-fit: cover;
   height: 100%;
   width: 100%;
@@ -10993,12 +10996,13 @@ section.resume-section .resume-section-content {
   display: flex;
 }
 
-.grid-pic:hover {
+.proj-grid:hover .grid-pic {
   opacity: 1;
   z-index: 3;
 }
 
-.grid-capt {
+.proj-grid .grid-capt {
+  transition: opacity 0.2s ease, visibility 0.2s ease;
   position: absolute;
   top: 70%;
   left: 0;
@@ -11011,6 +11015,31 @@ section.resume-section .resume-section-content {
   font-size: 25px;
 }
 
-.grid-capt:hover {
-  display:none;
+.proj-grid:hover .grid-capt {
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+.modal-xl {
+    width: 90%;
+   max-width:1200px;
+  }
+
+
+.btn-github {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #501DAF;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-border-color: black;
+  --bs-btn-hover-bg: #6A33D0;
+  --bs-btn-hover-border-color: black;
+  --bs-btn-focus-shadow-rgb: 161, 79, 48;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #ca7d60;
+  --bs-btn-active-border-color: #c46d4c;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #bd5d38;
+  --bs-btn-disabled-border-color: #bd5d38;
 }
