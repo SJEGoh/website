@@ -1,4 +1,6 @@
 from flask import Flask, render_template, request
+import os
+os.environ["no_proxy"] = "*"
 
 app = Flask(__name__)
 
@@ -11,7 +13,7 @@ def contact():
     if request.method == 'POST':
         name = request.form.get("name")
         email = request.form.get("email")
-        purpose = request.form.get("purpose_of_contact")
+        purpose = request.form.get("purpose")
         message = request.form.get("user_message")
         print(name, email, purpose, message)
     return render_template('contact.html')
