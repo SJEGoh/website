@@ -11043,9 +11043,26 @@ section.resume-section .resume-section-content {
   --bs-btn-disabled-border-color: #bd5d38;
 }
 
-.dev-icons .dev-icon {
-  display: inline-flex;
+.dev-icons { 
+  display: flex; 
+}
+
+.dev-icon {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin-right: 1.5rem;
+  margin: 0; 
+  margin-right: 5rem;
+}
+
+.dev-icon > figcaption {
+  margin-top: 0.4rem;
+  font-size: 1.2rem;
+}
+
+.edu-img {
+  display: block;
+  width: 20%;
+  margin-left: 100%;
+  margin-top: -15%;
 }
