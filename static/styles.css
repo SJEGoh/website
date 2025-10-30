@@ -10949,7 +10949,6 @@ p.lead {
 
 section.resume-section {
   display: flex;
-  align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 5rem;
@@ -11042,4 +11041,11 @@ section.resume-section .resume-section-content {
   --bs-btn-disabled-color: #000;
   --bs-btn-disabled-bg: #bd5d38;
   --bs-btn-disabled-border-color: #bd5d38;
+}
+
+.dev-icons .dev-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
 }
