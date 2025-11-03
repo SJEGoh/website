@@ -11001,6 +11001,10 @@ section.resume-section .resume-section-content {
 }
 
 .proj-grid .grid-capt {
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: nowrap;
+  overflow: hidden; 
   transition: opacity 0.2s ease, visibility 0.2s ease;
   position: absolute;
   top: 70%;
@@ -11012,6 +11016,14 @@ section.resume-section .resume-section-content {
   align-items: center;
   color: black;
   font-size: 25px;
+}
+
+.grid-sub {
+  white-space: pre-line;
+  font-size: 15px;
+  font-weight: normal;
+  color: gray;
+  
 }
 
 .proj-grid:hover .grid-capt {
