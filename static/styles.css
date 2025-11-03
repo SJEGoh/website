@@ -11078,3 +11078,12 @@ section.resume-section .resume-section-content {
   margin-left: 100%;
   margin-top: -15%;
 }
+
+.sd-img {
+  margin-bottom: 1%;
+  height: 80%;
+  width: 80%;
+  display: flex; 
+  border: 10px solid black;
+  border-radius: 10px
+}
