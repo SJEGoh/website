@@ -37,3 +37,5 @@ def interests():
 def skills():
     return render_template('skills.html')
 
+
+print('hello')
