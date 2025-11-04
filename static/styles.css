@@ -5364,6 +5364,9 @@ textarea.form-control-lg {
 }
 
 .modal-body {
+/* Add here to make Modal one page 
+  max-height: 60vh;
+  overflow-y: auto; Adds scrollbars only when necessary */
   position: relative;
   flex: 1 1 auto;
   padding: var(--bs-modal-padding);
