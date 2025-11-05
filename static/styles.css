@@ -10987,13 +10987,16 @@ section.resume-section .resume-section-content {
 
 /* All for project grid */
 .proj-grid .grid-pic {
+      flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
   transition: opacity 0.2s ease;
   cursor: pointer;
   object-fit: cover;
-  height: 100%;
-  width: 100%;
+  margin-right: 10%;
   opacity: 0.5;
   display: flex;
+  margin-bottom: 10%;
 }
 
 .proj-grid:hover .grid-pic {
@@ -11015,7 +11018,7 @@ section.resume-section .resume-section-content {
   background-color: white;
   z-index: 2;
   align-items: center;
-  color: black;
+  color: #343A40;
   font-size: 45px;
 }
 
@@ -11033,8 +11036,8 @@ word-wrap: break-word;
   background-color: white;
   z-index: 2;
   align-items: center;
-  color: gray;
-  font-size: 15px;
+  font-size: 16px;
+  color: #343A40;
 }
 
 
