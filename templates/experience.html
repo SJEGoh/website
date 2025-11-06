@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block body %}
-            <section  class = "mb-0" style = "margin-left: 1%">
+            <section  class = "mb-0" style = "margin-left: 1%;">
                     <h1>
                         Experience
                     </h1>
@@ -9,10 +9,10 @@
                         My (very limited) work experience (updated 29th October 2025)
                     </p>
             </section>
-            <div class="container">
+            <div class="container" style = "margin-top: 5%">
                 <div class="row">
-                    <div class="col">
-                        <a class = "proj-grid" data-bs-toggle="modal" data-bs-target="#Modal11" style="display: flex; position: relative; height: 50%;">
+                    <div class="col" style = "display: inline-block; height: 40vh; margin-bottom: 1%">
+                        <a class = "proj-grid" data-bs-toggle="modal" data-bs-target="#Modal11" style="display: flex; position: relative; height: 100%">
                         <img class="grid-pic img-fluid" src="{{ url_for('static', filename='assets/grid_img/4SAB.png') }}">
                         <div style="text-decoration:none;">
                             <h1 class="grid-tit">
@@ -20,7 +20,9 @@
                                     4th Singapore Armoured Brigade
                                 </p>
                             </h1>
-                            <p  class = "grid-capt" style = "white-space: pre-line"> Finance and Logistics Clerical Assistant<br>September 2022 - April 2024  
+                            <p  class = "grid-capt" style = "white-space: pre-line"><b>Finance and Logistics Clerical Assistant</b>
+                                September 2022 - April 2024
+                                Skills: Excel, Organization, Collaboration, Communication
                         </div>
                         </a>
 
@@ -61,8 +63,20 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col">
-                        1 of 3
+                    <div class="col" style = "height: 20.67vh; ; margin-top: 5%">
+                        <a class = "proj-grid" data-bs-toggle="modal" data-bs-target="#Modal11" style="display: flex; position: relative; height: 100%">
+                        <img class="grid-pic img-fluid" src="{{ url_for('static', filename='assets/grid_img/4SAB.png') }}">
+                        <div style="text-decoration:none;">
+                            <h1 class="grid-tit2">
+                                <p>
+                                    4th Singapore Armoured Brigade
+                                </p>
+                            </h1>
+                            <p  class = "grid-capt" style = "white-space: pre-line"><b>Finance and Logistics Clerical Assistant</b>
+                                September 2022 - April 2024
+                                Skills: Excel, Organization, Collaboration, Communication
+                        </div>
+                        </a>
                     </div>
                     <div class="col">
                         2 of 3
