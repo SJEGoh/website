@@ -13,7 +13,7 @@ def contact():
         email = request.form.get("email")
         purpose = request.form.get("purpose")
         message = request.form.get("user_message")
-        print(name, email, purpose, message)
+        print(name, email, purpose, message) # add sql later
     return render_template('contact.html')
 
 @app.route('/education')
