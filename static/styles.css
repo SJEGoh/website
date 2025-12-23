@@ -10951,8 +10951,6 @@ section.resume-section {
   display: flex;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
   max-width: 75rem;
 }
 section.resume-section .resume-section-content {
@@ -10968,8 +10966,6 @@ section.resume-section .resume-section-content {
   section.resume-section {
     padding-left: 3rem;
     padding-right: 3rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
   }
 }
 
@@ -11115,8 +11111,8 @@ word-wrap: break-word;
 
 .sd-img {
   margin-bottom: 1%;
-  height: 80%;
-  width: 80%;
+  height: auto;
+  max-width: 70%;
   display: flex; 
   border: 10px solid black;
   border-radius: 10px
@@ -11124,5 +11120,48 @@ word-wrap: break-word;
 
 .second-row {
   height: 16.7%;
+}
+
+.about-text {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  grid-template-columns: 3fr 1.2fr;
+}
+
+.about-image {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (min-width: 768px) {
+  .about-text {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .about-image {
+    margin-left: 5rem;
+    margin-top: 10rem;
+  }
+}
+
+.subheading {
+  white-space: normal;
+}
+
+@media (min-width: 768px) {
+  .subheading {
+    white-space: nowrap;
+  }
+}
+
+.dev-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
