@@ -1,10 +1,9 @@
 {% extends "layout.html" %}
 
 {% block body %}
-            <section  class = "mb-0" style = "margin-left: 1%">
+            <section  class = "mb-0 ml-1">
                     <h1>
-                        Proj
-                        <span class = "text-primary" style = "margin-left: -1%">ects</span>
+                        Projects
                     </h1>
                     <p>
                         My current projects (updated 29th October 2025)
@@ -12,21 +11,61 @@
             </section>
             <div class="container">
                 <div class="row">
-                    <div class="col"">
-                        <a class = "proj-grid" data-bs-toggle="modal" data-bs-target="#Modal11" style="display: flex; position: relative; height: 50%;">
+                    <div class="col proj-card">
+                        <a class = "proj-grid" data-bs-toggle="modal" data-bs-target="#Modal11">
                         <img class="grid-pic img-fluid" src="{{ url_for('static', filename='assets/grid_img/col11.jpeg') }}">
                         <div style="text-decoration:none;">
                             <h1 class="text-secondary grid-tit">
                                 <p>
-                                    Project 1
+                                    Price Prediction Model
                                 </p>
                             </h1>
                             <p  class = "mb-0 grid-capt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis, libero ac viverra mollis, enim metus eleifend augue, ut venenatis erat justo sed tortor. Cras iaculis est tortor, sed efficitur elit tincidunt eget. Ut et porta risus. Vivamus consectetur lobortis urna sit amet finibus. Sed a lacinia ligula. Curabitur purus enim, placerat quis lacinia tincidunt, hendrerit id massa. Ut iaculis lacus et faucibus facilisis. Vivamus tincidunt, nunc eget porta mollis, augue tortor consequat magna, vitae rutrum tellus nisl non ante. Phasellus malesuada neque sed scelerisque luctus. Donec hendrerit pharetra purus quis blandit.            
                             </p>
                         </div>
                         </a>
+                    </div>
 
-<!-- Modal -->
+                    <div class="col proj-card">
+                        <a class = "proj-grid" data-bs-toggle="modal" data-bs-target="#Modal11">
+                        <img class="grid-pic img-fluid" src="{{ url_for('static', filename='assets/grid_img/col11.jpeg') }}">
+                        <div style="text-decoration:none;">
+                            <h1 class="text-secondary grid-tit">
+                                <p>
+                                    Fixed Income Analysis Dashboard
+                                </p>
+                            </h1>
+                            <p  class = "mb-0 grid-capt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis, libero ac viverra mollis, enim metus eleifend augue, ut venenatis erat justo sed tortor. Cras iaculis est tortor, sed efficitur elit tincidunt eget. Ut et porta risus. Vivamus consectetur lobortis urna sit amet finibus. Sed a lacinia ligula. Curabitur purus enim, placerat quis lacinia tincidunt, hendrerit id massa. Ut iaculis lacus et faucibus facilisis. Vivamus tincidunt, nunc eget porta mollis, augue tortor consequat magna, vitae rutrum tellus nisl non ante. Phasellus malesuada neque sed scelerisque luctus. Donec hendrerit pharetra purus quis blandit.            
+                            </p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col proj-card2">
+                        <a class = "proj-grid" data-bs-toggle="modal" data-bs-target="#Modal11" style="height: 50%;">
+                        <img class="grid-pic img-fluid" src="{{ url_for('static', filename='assets/grid_img/col11.jpeg') }}">
+                        <div style="text-decoration:none;">
+                            <h1 class="text-secondary grid-tit">
+                                <p>
+                                    Algorithmic Pairs Trader
+                                </p>
+                            </h1>
+                            <p  class = "mb-0 grid-capt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis, libero ac viverra mollis, enim metus eleifend augue, ut venenatis erat justo sed tortor. Cras iaculis est tortor, sed efficitur elit tincidunt eget. Ut et porta risus. Vivamus consectetur lobortis urna sit amet finibus. Sed a lacinia ligula. Curabitur purus enim, placerat quis lacinia tincidunt, hendrerit id massa. Ut iaculis lacus et faucibus facilisis. Vivamus tincidunt, nunc eget porta mollis, augue tortor consequat magna, vitae rutrum tellus nisl non ante. Phasellus malesuada neque sed scelerisque luctus. Donec hendrerit pharetra purus quis blandit.            
+                            </p>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        2 of 3
+                    </div>
+                    <div class="col">
+                        3 of 3
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modals -->
             <div class="modal fade" id="Modal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
@@ -53,24 +92,6 @@
                                 Github Repo
                             </button>
                         </div>
-                    </div>
-                </div>
-            </div>
-                    </div>
-
-                    <div class="col">
-                        2 of 2
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        1 of 3
-                    </div>
-                    <div class="col">
-                        2 of 3
-                    </div>
-                    <div class="col">
-                        3 of 3
                     </div>
                 </div>
             </div>
