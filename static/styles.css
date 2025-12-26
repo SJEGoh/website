@@ -11031,7 +11031,7 @@ section.resume-section .resume-section-content {
   overflow: hidden; 
   transition: opacity 0.2s ease, visibility 0.2s ease;
   position: absolute;
-  bottom: 77%;
+  bottom: 76%;
   left: 0;
   width: 100%;
   height: 20%;
@@ -11193,4 +11193,9 @@ word-wrap: break-word;
 .proj-card { 
   height: 40vh;
 }          /* pick what you want */
+
+.grid-capt-sub {
+  color: grey;
+  font-size: 80%;
+}
 
